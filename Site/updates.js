@@ -1,5 +1,5 @@
 var updates = [
-    {message: "Welcome to the 3rd official release of Andyum!"}
+    {message: "Welcome to the 3rd official release of Andyum! This website was copied and is now Mahir Unblocker."}
 ];
 var updatespage = document.getElementById("updatespage");
 for(let item of updates) {
