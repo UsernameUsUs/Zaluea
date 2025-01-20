@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+
 @keyframes startAnimation {
     0% {
         opacity: 0;
@@ -9,20 +10,23 @@
 }
 
 * {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
-    background: rgb(22, 22, 22);
+    background: linear-gradient(to bottom, black, white);
     display: flex;
     flex-direction: column;
     margin: 0;
     min-height: 100vh;
-    animation: startAnimation ease-in 0.8s;
+    animation: startAnimation 0.8s ease-in;
+}
+
+.bar, .page, .bottom, .settings, .updates {
+    background: linear-gradient(to right, black, white);
 }
 
 .bar {
-    background-color: #272727;
     height: 50px;
     position: fixed;
     top: 0;
@@ -42,33 +46,25 @@ body {
 }
 
 .page {
-    background-color: #272727;
     height: 200px;
     width: 600px;
-    top: 0;
-    left: 0;
-    right: 0;
 }
 
 .bottom {
-    background-color: #272727;
     margin-top: auto;
     height: 50px;
 }
 
-.gamebutton {
-    margin-top: 1%;
-    font-size: large;
+.text, .textbottom, .linkbottom, .main_title, .title, .games_title, .updatetitle, .updatespage, .message, .settingsstuff {
+    color: white;
 }
 
 .text {
-    color: #FFF;
     font-size: 25px;
     margin-top: 1%;
 }
 
 .textbottom {
-    color: #FFF;
     font-size: 15px;
     margin-top: 0.5%;
     margin-right: 1%;
@@ -86,11 +82,14 @@ body {
 }
 
 .setting {
-    color: white;
     display: none;
     font-size: 14px;
     position: fixed;
     top: 20px;
+}
+
+.title_settings, .settitle {
+    color: white;
 }
 
 .title_settings {
@@ -133,42 +132,26 @@ body {
     cursor: pointer;
 }
 
-.closegame {
+.closegame, .fullscreengame {
     right: 30px;
     cursor: pointer;
     display: none;
 }
 
-.fullscreengame {
-    right: 130px;
-    cursor: pointer;
-    display: none;
+.ytlink:hover, .tabconfig:hover, .updates_btn:hover, a:hover {
+    color: grey;
 }
 
-.ytlink:hover {
-    color: grey;
+.tabconfig, .updates_btn {
+    cursor: pointer;
 }
 
 .tabconfig {
-    cursor: pointer;
     right: 180px;
 }
 
-.tabconfig:hover {
-    color: grey;
-}
-
 .updates_btn {
-    cursor: pointer;
     right: 270px;
-}
-
-.updates_btn:hover {
-    color: grey;
-}
-
-a:hover {
-    color: grey;
 }
 
 a {
@@ -177,31 +160,30 @@ a {
     text-decoration: none;
 }
 
-.title {
+.title, .games_title {
     font-size: 90px;
-    margin-top: 13%;
     text-align: center;
     color: rgba(255, 255, 255, 0.842);
 }
 
+.title {
+    margin-top: 13%;
+}
+
 .games_title {
-    font-size: 90px;
     margin-top: 5%;
-    text-align: center;
-    color: rgba(255, 255, 255, 0.842);
 }
 
 form input {
     background: none;
-    padding: 0px 20px;
+    padding: 0 20px;
     height: 50px;
-    color: var(--text-color);
+    color: white;
     outline: none;
     width: 400px;
     margin-top: 10px;
     border-radius: 50px;
-    color: #FFF;
-    border: 5px solid  rgba(255, 255, 255, 0.363);
+    border: 5px solid rgba(255, 255, 255, 0.363);
     transition-duration: 1s;
 }
 
@@ -209,48 +191,15 @@ form input:focus {
     border-color: rgba(255, 255, 255, 0.712);
 }
 
-.settings {
-    background-color: #272727;
-    height: 50px;
-    position: fixed;
-    right: 100px;
+.settings, .updates {
     width: 350px;
     height: 200px;
     display: none;
-}
-
-.updates {
-    background-color: #272727;
-    height: 50px;
-    position: fixed;
-    right: 455px;
-    width: 350px;
-    height: 200px;
-    display: none;
-}  
-
-.updatetitle {
-    color: #FFF;
-    text-align: center;
-}
-
-.updatespage {
-    margin-top: 2%;
-    color: #FFF;
-}
-
-.message {
-    margin-top: 2%;
-    color: #FFF;
-}
-
-.settingsstuff {
-    color: #FFF;
 }
 
 .closesettings_button {
     position: fixed;
-    top: 0%;
+    top: 0;
     right: 50px;
     color: rgb(255, 32, 32);
 }
@@ -260,18 +209,11 @@ form input:focus {
     margin-top: 1%;
 }
 
-.setTitle {
-    color: #FFF;
+.setTitle, .setIco {
+    color: white;
     background: none;
-    border: 5px solid  rgba(255, 255, 255, 0.363);
+    border: 5px solid rgba(255, 255, 255, 0.363);
     margin-top: 1%;
-}
-
-.setIco {
-    color: #FFF;
-    margin-top: 1%;
-    background: none;
-    border: 5px solid  rgba(255, 255, 255, 0.363);
 }
 
 .resetButton {
@@ -280,10 +222,10 @@ form input:focus {
     height: 20%;
     border: 3px solid rgba(255, 255, 255, 0.842);
     border-radius: 5px;
-    background: #FFF;
+    background: white;
     margin-top: 5%;
     cursor: pointer;
-    color: rgb(0, 0, 0);
+    color: black;
 }
 
 .quicktext {
@@ -294,5 +236,5 @@ form input:focus {
 }
 
 .games {
-    color: #FFF;
+    color: white;
 }
