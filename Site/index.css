@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Literata');
 @keyframes startAnimation {
     0% {
         opacity: 0;
@@ -13,7 +13,7 @@
 }
 
 body {
-    background: rgb(22, 22, 22);
+    background: rgb(110, 38, 14);
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -22,7 +22,7 @@ body {
 }
 
 .bar {
-    background-color: #272727;
+    background-color: #EE4B2B;
     height: 50px;
     position: fixed;
     top: 0;
