@@ -13,7 +13,7 @@
 }
 
 body {
-    background: linear-gradient(135deg, rgb(22, 22, 22), rgb(45, 45, 45));
+    background: linear-gradient(135deg, #1e1e1e, #333333, #444444);
     display: flex;
     flex-direction: column;
     margin: 0;
