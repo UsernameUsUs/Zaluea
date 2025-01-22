@@ -13,7 +13,7 @@
 }
 
 body {
-    background: rgb(110, 38, 14);
+    background: linear-gradient(135deg, rgb(255, 0, 0), rgb(22, 22, 22)); /* Gradient red to black */
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -22,13 +22,14 @@ body {
 }
 
 .bar {
-    background-color: #EE4B2B;
+    background: linear-gradient(90deg, rgb(255, 0, 0), rgb(22, 22, 22)); /* Gradient red to black */
     height: 50px;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
 }
+
 
 .gamewindow {
     position: fixed;
